@@ -215,3 +215,126 @@
   </script>
 </body>
 </html>
+<!-- HERO SECTION -->
+<section class="hero text-white d-flex align-items-center" id="home">
+    <div class="container text-center" data-aos="fade-up">
+      <h1 class="display-4 fw-bold">We Build Beautiful Experiences</h1>
+      <p class="lead mt-3">Creative websites. Modern interfaces. Real impact.</p>
+      <a href="#services" class="btn btn-warning btn-lg mt-4">Explore Services</a>
+    </div>
+  </section>
+  
+  <style>
+  .hero {
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .hero > .container {
+    position: relative;
+    z-index: 1;
+  }
+  </style>
+<!-- SERVICES SECTION -->
+<section class="py-5 bg-light" id="services">
+    <div class="container text-center">
+      <h2 class="mb-5" data-aos="fade-up">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <i class="fas fa-laptop-code fa-3x mb-3 text-warning"></i>
+          <h5>Web Development</h5>
+          <p>Clean, modern, and fast websites tailored to your needs.</p>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-palette fa-3x mb-3 text-warning"></i>
+          <h5>UI/UX Design</h5>
+          <p>Intuitive designs that improve user experience and engagement.</p>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-rocket fa-3x mb-3 text-warning"></i>
+          <h5>SEO Optimization</h5>
+          <p>Boost your visibility and climb the search engine ranks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- TESTIMONIALS SECTION -->
+<section class="py-5 text-white bg-dark" id="testimonials">
+    <div class="container text-center">
+      <h2 class="mb-5" data-aos="fade-up">What Clients Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-aos="fade-right">
+            <blockquote class="blockquote">
+              <p>"Absolutely stunning design and fast delivery! Highly recommended."</p>
+              <footer class="blockquote-footer text-light">Jane Doe, CEO of StartupX</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item" data-aos="fade-left">
+            <blockquote class="blockquote">
+              <p>"Their attention to detail is top-notch. They truly care about results."</p>
+              <footer class="blockquote-footer text-light">Mark Lee, Founder of Creatix</footer>
+            </blockquote>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+    <!-- CTA SECTION -->
+<section class="py-5 bg-warning text-dark text-center">
+    <div class="container" data-aos="zoom-in">
+      <h2 class="mb-3">Ready to Elevate Your Brand?</h2>
+      <a href="#contact" class="btn btn-dark btn-lg">Contact Us Now</a>
+    </div>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+      <p class="mb-2 mb-md-0">&copy; 2025 MyBrand. All rights reserved.</p>
+      <div>
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+ <!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Smooth Scroll -->
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
+  // Shrinking Navbar on Scroll
+  const navbar = document.getElementById('mainNavbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('shrink', window.scrollY > 50);
+  });
+</script>
+ 
